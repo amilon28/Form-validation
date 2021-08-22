@@ -1,0 +1,52 @@
+* {
+
+}
+
+body {
+
+}
+
+div {
+
+}
+
+
+div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* width: 10px; */
+    /* height: 10px; */
+    /* background-color: mediumturquoise; */
+    /* border-radius: 20px; */
+}
+div p {
+    font-size: large;
+    opacity: 0.5;
+}
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.container span {
+    width: 2px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+}
+div::before {
+    content: '';
+    width: 2px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+div::after {
+    content: '';
+    width: 2px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+}
