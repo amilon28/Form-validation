@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./app.js" defer></script>
     <title>Test</title>
   </head>
   <body>
-    <div class="form__continer">
+    <form class="form__container">
       <h2 class="form__title">Register With Us</h2>
       <div class="form__box">
         <div class="form__label">
@@ -16,6 +23,7 @@
         </div>
         <div class="form__input">
           <input type="text" id="username" placeholder="Enter username" />
+          <p class="form__error form__error--user"></p>
         </div>
       </div>
       <div class="form__box">
@@ -24,6 +32,7 @@
         </div>
         <div class="form__input">
           <input type="email" id="email" placeholder="Enter email" />
+          <p class="form__error form__error--email"></p>
         </div>
       </div>
       <div class="form__box">
@@ -32,6 +41,7 @@
         </div>
         <div class="form__input">
           <input type="password" id="password" placeholder="Enter password" />
+          <p class="form__error form__error--password"></p>
         </div>
       </div>
       <div class="form__box">
@@ -44,11 +54,12 @@
             id="confirm-password"
             placeholder="Enter password again"
           />
+          <p class="form__error form__error--passwordConfirm"></p>
         </div>
       </div>
       <div class="form__btn">
         <input type="submit" id="submit-btn" />
       </div>
-    </div>
+    </form>
   </body>
 </html>
