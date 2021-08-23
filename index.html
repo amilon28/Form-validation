@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Test</title>
-</head>
-<body>
-    <div class="container">
-        <span></span>
-        Main Test
-        <span></span>
-        <div>
-            <span></span>
+  </head>
+  <body>
+    <div class="form__continer">
+      <h2 class="form__title">Register With Us</h2>
+      <div class="form__box">
+        <div class="form__label">
+          <label for="username">Username</label>
         </div>
+        <div class="form__input">
+          <input type="text" id="username" placeholder="Enter username" />
+        </div>
+      </div>
+      <div class="form__box">
+        <div class="form__label">
+          <label for="email">Email</label>
+        </div>
+        <div class="form__input">
+          <input type="email" id="email" placeholder="Enter email" />
+        </div>
+      </div>
+      <div class="form__box">
+        <div class="form__label">
+          <label for="password">Password</label>
+        </div>
+        <div class="form__input">
+          <input type="password" id="password" placeholder="Enter password" />
+        </div>
+      </div>
+      <div class="form__box">
+        <div class="form__label">
+          <label for="confirm-password">Confirm Password</label>
+        </div>
+        <div class="form__input">
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Enter password again"
+          />
+        </div>
+      </div>
+      <div class="form__btn">
+        <input type="submit" id="submit-btn" />
+      </div>
     </div>
-    <div> 
-        <span></span>
-        <p>text 2</p>
-    </div>
-</body>
+  </body>
 </html>
