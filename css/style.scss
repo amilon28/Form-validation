@@ -1,0 +1,93 @@
+$label-color : #838383;
+$border-color: #d3d3d3;
+$input-fields-bg: #fff;
+$shadow: #525252;
+$btn-bg: #4A9BDA;
+$error: #da4a4a;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(97, 186, 255, 1) 0%, rgba(166, 239, 253, 1) 90.1%);
+}
+
+.form {
+
+
+    &__container {
+        background-color: $input-fields-bg;
+        width: 350px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid $shadow;
+        border-radius: 2px;
+        box-shadow: 5px 3px 8px $shadow;
+        padding: 10px 12px;
+    }
+
+    &__title {}
+
+    &__box {
+        width: 90%;
+    }
+
+    &__label {
+        margin-bottom: 4px;
+
+        label {
+            color: $label-color;
+        }
+    }
+
+    &__input {
+        input {
+            width: 100%;
+            padding: 8px;
+            background-color: $input-fields-bg;
+            border: 2px solid $border-color;
+            border-radius: 4px;
+            transition: 0.1s ease-in;
+
+            &:focus {
+                outline: none;
+                border-color: $shadow;
+            }
+        }
+    }
+
+    &__btn {
+        width: 90%;
+
+        input {
+            width: 100%;
+            padding: 8px;
+            color: $input-fields-bg;
+            background-color: $btn-bg;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+    &__error {
+        color: $error;
+        font-size: 15px;
+        margin-top: 4px;
+    }
+}
+
+::placeholder {
+    color: $label-color;
+}

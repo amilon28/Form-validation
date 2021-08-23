@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/css/style.css" />
+    <script src="./js/app.js" defer></script>
+    <title>Test</title>
+  </head>
+  <body>
+    <form class="form__container">
+      <h2 class="form__title">Register With Us</h2>
+      <div class="form__box">
+        <div class="form__label">
+          <label for="username">Username</label>
+        </div>
+        <div class="form__input">
+          <input type="text" id="username" placeholder="Enter username" />
+          <p class="form__error form__error--user"></p>
+        </div>
+      </div>
+      <div class="form__box">
+        <div class="form__label">
+          <label for="email">Email</label>
+        </div>
+        <div class="form__input">
+          <input type="email" id="email" placeholder="Enter email" />
+          <p class="form__error form__error--email"></p>
+        </div>
+      </div>
+      <div class="form__box">
+        <div class="form__label">
+          <label for="password">Password</label>
+        </div>
+        <div class="form__input">
+          <input type="password" id="password" placeholder="Enter password" />
+          <p class="form__error form__error--password"></p>
+        </div>
+      </div>
+      <div class="form__box">
+        <div class="form__label">
+          <label for="confirm-password">Confirm Password</label>
+        </div>
+        <div class="form__input">
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Enter password again"
+          />
+          <p class="form__error form__error--passwordConfirm"></p>
+        </div>
+      </div>
+      <div class="form__btn">
+        <input type="submit" id="submit-btn" />
+      </div>
+    </form>
+  </body>
+</html>
